@@ -1,3 +1,5 @@
+**This for is meant for those running Kiauh, the original script does not detect klipper instences that are using Kiauh it only searches for klipper.services and when running Kiauh, the systemctl service name is klipper-PRINTERNAME.server. This sricpt is meant to search for any services that start with the word Klipper, then proceeds to install.**
+
 # Klipper TMC Autotune
 
 Klipper extension for automatic configuration and tuning of TMC drivers.
