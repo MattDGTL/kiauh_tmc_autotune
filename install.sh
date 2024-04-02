@@ -62,7 +62,7 @@ printf "======================================\n\n"
 
 
 # Run steps
-preflight_checks
+# preflight_checks
 check_download
 link_extension
 restart_klipper
