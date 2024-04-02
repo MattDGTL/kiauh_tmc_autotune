@@ -13,8 +13,8 @@ function preflight_checks {
         exit -1
     fi
 
-    echo "List of services:"
-    sudo systemctl list-units --full -all -t service --no-legend
+    # echo "List of services:"
+    # sudo systemctl list-units --full -all -t service --no-legend
 
     if sudo systemctl list-units --full -all -t service --no-legend | grep -q '^klipper'; then
         printf "[PRE-CHECK] Klipper service found! Continuing...\n\n"
@@ -57,7 +57,7 @@ function restart_klipper {
 
 
 printf "\n======================================\n"
-echo "- Autotune TMC install script -2"
+echo "- Autotune TMC install script -22"
 printf "======================================\n\n"
 
 
