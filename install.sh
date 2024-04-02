@@ -13,12 +13,12 @@ function preflight_checks {
         exit -1
     fi
 
-    #if sudo systemctl list-units --full -all -t service --no-legend | grep -F '^klipper*\.service$' >/dev/null; then
+    echo "List of services:"
+    systemctl list-units --full -all -t service --no-legend
+
     if systemctl list-units --full -all -t service --no-legend | grep -q '^klipper'; then
         printf "[PRE-CHECK] Klipper service found! Continuing...\n\n"
     else
-        echo grep -F '^klipper*\.service$' >/dev/null
-        
         echo "[ERROR] Klipper service not found, please install Klipper first!"
         exit -1
     fi
