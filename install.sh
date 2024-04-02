@@ -57,7 +57,7 @@ function restart_klipper {
 
 
 printf "\n======================================\n"
-echo "- Autotune TMC install script -"
+echo "- Autotune TMC install script -2"
 printf "======================================\n\n"
 
 
